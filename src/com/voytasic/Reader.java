@@ -14,7 +14,7 @@ public class Reader implements Observer {
     @Override
     public void update() {
         newestArticle = blog.getNewestArticle();
-        System.out.println(String.format("An article „%s” was published!",  newestArticle));
+        System.out.println(String.format("%s: An article „%s” was published!", readerName, newestArticle));
     }
     public void subscribe() {
         this.blog.attach(this);
