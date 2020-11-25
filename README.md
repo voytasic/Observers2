@@ -2,6 +2,6 @@
 
 Observer & Observable implementation 
 
-originally implemented by Marcin Pietraszek https://samouczekprogramisty.pl
+initially implemented by Marcin Pietraszek https://samouczekprogramisty.pl
 
-Implementation of Reader changed by me
+Implementation of the Reader class changed by me
