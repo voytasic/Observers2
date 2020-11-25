@@ -16,9 +16,13 @@ public class Reader implements Observer {
         newestArticle = blog.getNewestArticle();
         System.out.println(String.format("%s: An article „%s” was published!", readerName, newestArticle));
     }
+
+    @Override
     public void subscribe() {
         this.blog.attach(this);
     }
+
+    @Override
     public void unsubscribe(){
         this.blog.detach(this);
     }
