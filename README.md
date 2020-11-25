@@ -1,4 +1,6 @@
 # observers2
 
-Observer & Observable implementation \\n
-originally created by Marcin Pietraszek https://samouczekprogramisty.pl
+Observer & Observable implementation 
+
+originally implemented by Marcin Pietraszek https://samouczekprogramisty.pl
+changed by me
