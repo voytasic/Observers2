@@ -19,8 +19,8 @@ public class Blog implements Observable {
     }
 
     @Override
-    public void notifyObservers() {
-        observers.forEach(Observer::update);
+    public void notifyObservers(ArticleEvent ae) {
+        observers.forEach(observer -> observer.update(ae));
     }
 
     public String getNewestArticle() {
@@ -29,7 +29,8 @@ public class Blog implements Observable {
 
     public void publishArticle(String article) {
         newestArticle = article;
-        notifyObservers();
+        ArticleEvent ae = new ArticleEvent(this, newestArticle);
+        notifyObservers(ae);
     }
 
 
