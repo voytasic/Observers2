@@ -11,7 +11,7 @@ public class Reader implements Observer {
 
     @Override
     public void update(ArticleEvent ae) {
-        newestArticle = ((Blog)ae.source).getNewestArticle();
+        newestArticle = (String) ae.event;
         System.out.println(String.format("%s: An article „%s” was published!", readerName, newestArticle));
     }
 
